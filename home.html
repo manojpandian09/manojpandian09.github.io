@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Home</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- styles sheet links -->
+	<link rel="stylesheet" href="container2-styles.css">
+</head>
+<body style="background-color: grey;">
+	
+
+<h1 style="background-color:red;position: sticky;top: 0px;">AutoMobilesIndia</h1>
+
+<div class="search-container">
+	<p>search container</p>
+</div>
+
+
+<div class="upcoming-container">
+</div>
+
+
+<div class="latest-container">
+	
+	<div class="latest-header">
+		<h1> New Arraivals
+	</div>
+
+	<div class="content-border">
+
+		<div class="product-container">
+
+			<div class="product-border">
+				
+					<div class="product">
+						<h3 style="background-color :black;color: white; position: relative;padding: 2px;"> Ford Mustang</h3>
+						<img src="mustangbg.jpg" style="width: 100%;">
+						<p>The Ford Mustang is a series of American automobiles manufactured by Ford. In continuous production since 1964, the Mustang is currently the longest-produced Ford car nameplate. Currently in its sixth generation, it is the fifth-best selling Ford car nameplate. The namesake of the "pony car" automobile segment, the Mustang was developed as a highly styled line of sporty coupes and convertibles derived from existing model lines, initially distinguished by "long hood, short deck" proportions.[3]
+
+Originally predicted to sell 100,000 vehicles yearly, the 1965 Mustang became the most successful vehicle launch since the 1927 Model A.[4] Introduced on April 17, 1964[5] (16 days after the Plymouth Barracuda), over 400,000 units in its first year; the one-millionth Mustang was sold within two years of its launch.[6] In August 2018, Ford produced the 10-millionth Mustang; matching the first 1965 Mustang, the vehicle was a 2019 Wimbledon White convertible with a V8 engine.</p>
+					</div>
+
+			</div>
+
+
+			<div class="product-border">
+				
+					<div class="product" >
+						<h3 style="background-color :black;color: white; position: relative;padding: 2px;"> Ferrari</h3>
+						<img src="FERRARI.jpg" style="width: 100%;">
+						<p>Ferrari S.p.A. (/fəˈrɑːri/; Italian: [ferˈraːri]) is an Italian luxury sports car manufacturer based in Maranello, Italy. Founded by Enzo Ferrari in 1939 out of the Alfa Romeo race division as Auto Avio Costruzioni, the company built its first car in 1940, and produced its first Ferrari-badged car in 1947.
+
+Fiat S.p.A. acquired 50% of Ferrari in 1969 and expanded its stake to 90% in 1988.[4] In October 2014, Fiat Chrysler Automobiles (FCA) announced its intentions to separate Ferrari S.p.A. from FCA; as of the announcement FCA owned 90% of Ferrari.[5][6][7] The separation began in October 2015 with a restructuring that established Ferrari N.V. (a company incorporated in the Netherlands) as the new holding company of the Ferrari S.p.A. group,[8] and the subsequent sale by FCA of 10% of the shares in an IPO and concurrent listing of common shares on the New York Stock Exchange.[9] Through the remaining steps of the separation, FCA's interest in Ferrari's business was distributed to shareholders of FCA, with 10% continuing to be owned by Piero Ferrari.[10] The spin-off was completed on 3 January 2016.[</p>
+					</div>
+
+			</div>
+
+
+
+		</div>
+
+	</div>
+
+	<button onclick="plusDivs(-1)" class="prev">&#10094</button>
+	<button onclick="plusDivs(1)" class="next">&#10095</button>
+
+</div>
+
+
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("product-border");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>

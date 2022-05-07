@@ -1,0 +1,141 @@
+@media screen and (max-width : 500px){
+	/* styles for serach-container */
+.search-container{
+	width: 100%;
+	height: 60vh;
+	border: 1px solid black;
+    margin: auto;
+
+}
+
+/*style for upcoming-container */
+.upcoming-container{
+	width: 100%;
+	height: 60vh;
+	border: 1px solid black;
+    margin: auto;
+}
+
+/* styles for lastest-container */
+.latest-container{
+	width: 100%;
+	height: 60vh;
+	position: relative;
+	margin: auto;
+/*	border: 1px solid black; */
+}
+}
+
+
+@media screen and (min-width : 501px){
+
+
+
+
+
+
+/* styles for serach-container */
+.search-container{
+	width: 30%;
+	height: 80vh;
+	border: 1px solid black;
+    float : left;
+
+}
+
+/*style for upcoming-container */
+.upcoming-container{
+	width: 30%;
+	height: 80vh;
+	border: 1px solid black;
+    float : right;
+}
+
+/* styles for lastest-container */
+.latest-container{
+	width: 30%;
+	height: 80vh;
+	position: relative;
+	margin: auto;
+/*	border: 1px solid black; */
+}
+
+}
+
+.latest-header{
+	width: 100%;
+	height: 5vh;
+	margin: auto;
+	background-color: blueviolet;	
+}
+
+.content-border{
+	width: 100%;
+	height: 75vh;
+/*	background-color: white;   */
+	overflow-x: scroll;
+}
+.content-border::-webkit-scrollbar{
+	display: none;
+}
+
+.content-border{
+	overflow-y: auto;
+}
+
+
+.product-container{
+	width: 100%;
+}
+
+.product-border{
+	width: 100%;
+	float: left;
+	position: absolute;
+	background-color: white;
+	display: none;
+	transition: 0.5s;
+}
+
+
+.product{
+	width: 96.5%;
+	height: 70vh;
+	border: 1px solid white;
+/*	box-shadow: 5px 8px black;   */
+	padding: 5px;
+	overflow-x: scroll;
+}
+.product::-webkit-scrollbar{
+	display: none;
+}
+p{
+	text-align: justify;
+}
+
+
+
+
+
+.next,.prev{
+	position: absolute;
+	top: 50%;
+	transition: 0.6s;
+	padding: 3px;
+	text-decoration: none;
+	color: black;
+}
+
+.next{
+	float: right;
+	right: 5px;
+}
+
+.prev:hover , .next:hover {
+	background-color: black;
+	color: white;
+}
+
+
+
+
